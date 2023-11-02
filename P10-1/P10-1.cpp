@@ -10,8 +10,16 @@ using namespace std;
 int count_letters(string str);
 
 int main(void)
-{
-	cout << count_letters("asdf.ah/.filyifsdf");
+{	
+	
+	while(true)
+	{
+		string stri;
+		getline(cin, stri);
+		cout << count_letters(stri) << endl << endl;
+		if (stri == "Q")
+			break;
+	}
 
 	return 0;
 }
